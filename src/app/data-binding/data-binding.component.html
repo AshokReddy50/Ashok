@@ -1,0 +1,19 @@
+<p>data-binding works!</p>
+
+
+
+<h3>my age is {{age}}</h3>
+<h3>my name is {{name}}</h3>
+<h3>is indian: {{isindian}}</h3>
+
+<button [disabled]="isValid">submit</button>
+
+
+
+<button (click)="upload()">upload</button>
+<button (dblclick)="send()"></button>
+<input type="text" (keyup)="change()" id="">
+<br>
+<input type="text" [(ngModel)]="phone">
+<p>{{phone}}</p>
+

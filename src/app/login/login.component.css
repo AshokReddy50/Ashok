@@ -1,0 +1,39 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.child{
+    height: 50%;
+    width: 20%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+   
+    
+}
+h2{
+    margin-left: 40%;
+}
+label{
+    margin-left: 40%;
+    padding: 2px;
+}
+input{
+    padding: 5px;
+    margin-left: 10%;
+    width: 80%;
+    
+}
+button{
+    margin-left: 10%;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    width: 80%;
+    border-radius: 15px;
+}
