@@ -17,6 +17,7 @@
     height: 100%;
     width: 80%;
     background-color: skyblue;
+    overflow: auto;
 }
 button{
     background-color: green;

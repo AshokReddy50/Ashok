@@ -14,6 +14,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CircleComponent } from './circle/circle.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { BmiComponent } from './bmi/bmi.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { BmiComponent } from './bmi/bmi.component';
     CalculatorComponent,
     CircleComponent,
     RectangleComponent,
-    BmiComponent
+    BmiComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,54 @@
+<p>structural-directives works!</p>
+
+<p *ngFor="let age of ages">
+my age is {{age}}
+</p>
+<p *ngFor="let state of states; let i=index">
+    my state {{i+1}} is {{state}}
+
+</p>
+<ol type="A">
+    <li *ngFor="let state of states">{{states}}
+    </li>
+</ol>
+<select name="" id="">
+    <option *ngFor="let state of states">{{state}}
+    </option>
+</select>
+<p *ngFor="let the products of product">
+    the {{products.name}} price is {{products.price}} and rating is {{products.rating}}.
+
+</p>
+<table  border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>price</th>
+            <th>rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+        <td> {{product.name}}</td>
+        <td> {{product.price}}</td>
+        <td [ngStyle]="{'color':product.rating>3?'green':'red'}"> {{product.rating}}</td>
+    </tr>
+    </tbody>
+</table>
+<table border="2">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>company</th>
+            <th>salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr *ngFor="let employe of employes">
+        <td> {{employe.name}}  </td>
+        <td> {{employe.company}}</td>
+        <td [ngClass]="{'red':employe.salary<=10000,'blue':employe.salary>10000&&employe.salary<=15000,'green':employe.salary>15000}"> {{employe.salary}}</td>
+    </tr>
+    </tbody>
+</table>

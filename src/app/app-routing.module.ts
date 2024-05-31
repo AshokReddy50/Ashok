@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Directive, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -10,6 +10,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CircleComponent } from './circle/circle.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { BmiComponent } from './bmi/bmi.component';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
     {path: 'calculator',component:CalculatorComponent},
     {path:'circle',component:CircleComponent},
     {path:'rectangle',component:RectangleComponent},
-    {path:'bmi',component:BmiComponent}
+    {path:'bmi',component:BmiComponent},
+    {path:'sructural-directives',component:StructuralDirectivesComponent}
      
   ]},
   {path:'',component:LoginComponent},
