@@ -1,0 +1,16 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.child{
+    height: auto;
+    width: 30%;
+    background-color: skyblue;
+   border-radius: 15px;
+    text-align: center;
+}

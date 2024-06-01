@@ -27,9 +27,14 @@ button{
     width: 80%;
     border-radius: 10px;
 }
-h2{
+h3{
     margin-left: 15px;
+    
 }
 h1{
     margin-left: 15px;
+}
+h3:hover{
+    background-color: white;
+
 }

@@ -15,6 +15,8 @@ import { CircleComponent } from './circle/circle.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { BmiComponent } from './bmi/bmi.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { EventComponent } from './event/event.component';
+import { StudentsComponent } from './students/students.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { StructuralDirectivesComponent } from './structural-directives/structura
     CircleComponent,
     RectangleComponent,
     BmiComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    EventComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
