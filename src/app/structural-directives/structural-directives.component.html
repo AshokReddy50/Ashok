@@ -30,7 +30,7 @@ my age is {{age}}
     <tbody>
         <tr *ngFor="let product of products">
         <td> {{product.name}}</td>
-        <td> {{product.price}}</td>
+        <td> {{product.price  | balance}}</td>
         <td [ngStyle]="{'color':product.rating>3?'green':'red'}"> {{product.rating}}</td>
     </tr>
     </tbody>

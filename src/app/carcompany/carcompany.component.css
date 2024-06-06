@@ -1,0 +1,20 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 80%;
+    width: 80%;
+    background-color: rgb(203, 102, 102);
+}
+h3{
+    align-items: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

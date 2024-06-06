@@ -17,6 +17,15 @@ import { BmiComponent } from './bmi/bmi.component';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 import { EventComponent } from './event/event.component';
 import { StudentsComponent } from './students/students.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { BalancePipe } from './balance.pipe';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { CarcompanyComponent } from './carcompany/carcompany.component';
+import { DiceComponent } from './dice/dice.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AccountComponent } from './account/account.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +42,21 @@ import { StudentsComponent } from './students/students.component';
     BmiComponent,
     StructuralDirectivesComponent,
     EventComponent,
-    StudentsComponent
+    StudentsComponent,
+    PipesComponent,
+    BalancePipe,
+    ShoppingComponent,
+    CarcompanyComponent,
+    DiceComponent,
+    VehiclesComponent,
+    AccountComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

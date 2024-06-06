@@ -1,0 +1,42 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+ 
+   
+}
+.child{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+   
+   
+}
+
+.left{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(128, 136, 139);
+
+}
+.right{
+    height: 100%;
+    width : 80%;
+  
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.photos{
+
+    height: 300px;
+    width: 250px;
+    background-color:white;
+    margin-top: 10px;
+  
+
+}

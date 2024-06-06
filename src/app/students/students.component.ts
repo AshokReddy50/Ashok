@@ -28,7 +28,7 @@ export class StudentsComponent implements OnInit {
       name: this.name,
       marks: this.marks,
       fee: this.fee
-    };
+    }
     this.students.push(student);
     this.name = "";
     this.marks = 0;
@@ -37,7 +37,7 @@ export class StudentsComponent implements OnInit {
     }
     delete(i:number){
       this.students.splice(i,1);
-    }
+    } 
     pendingfee(){
       let totalfee:number=0;
       totalfee= this.students.reduce((sum:number,student:any) => sum+this.students.fee,0),
@@ -56,7 +56,6 @@ export class StudentsComponent implements OnInit {
           return student;
         })
       }
-
 
       }
   

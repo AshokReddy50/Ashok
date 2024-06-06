@@ -1,0 +1,65 @@
+
+<div class="parent">
+    <div class="top">
+        <div class="topleft">
+            <input type="text" placeholder="search">
+            <button>Only free delivery</button>
+            <br>
+            <button (click)="plh()">price low to high</button>
+            <button (click)="phl()">price high to low</button>
+            <button (click)="rlh()">rating low to high</button>
+            <button (click)="rhl()">rating high to low</button>
+            <br>
+            <button (click)="discount()">Apply 50% discount</button>
+            <button (click)="deliverycharges()">price with delivery charges</button>
+            <br>
+            <button>Total Price</button>
+            <button >Total cart items</button>
+        </div>  
+        <div class="topright">
+            <label for="">Name:</label>
+            <input type="text" name="" id="">
+            <br>
+            <label for="">Price</label>
+            <input type="text" name="" id="">
+            <br>
+            <label for="">Rating:</label>
+            <input type="text" name="" id="">
+            <br>
+            <label for="freed">Free Delivery</label>
+            <input type="radio" name="freed" id=""
+            >
+            <label for="">YES</label>
+            <input type="radio" name="freed" id="">
+            <label for="">NO</label>
+            <br>
+            <br>
+            <button class="btn btn-success" (click)="addtocart">Add to cart</button>
+           
+        </div>
+    </div>
+    <div class="down">
+        <table border="1" class=" table table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Free Delivery</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let product of products; let i = index">
+                    <td> {{product.product}} </td>
+                    <td> {{product.price}} </td>
+                    <td> {{product.rating}} </td>
+                    <td> {{product.freedelivery}} </td>
+               
+                     <td><button class="btn btn-danger" (click)="delete(i)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

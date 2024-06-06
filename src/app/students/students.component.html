@@ -6,18 +6,16 @@
        
         <br>  
         <label for="">Name</label>
-        <input type="text" name="" id="name" ({ngModel})="name">
+        <input type="text" name="" id="name"[(ngModel)]="name">
         <br>
         <label for="">Marks</label>
-        <input type="number" name="" id="marks" ({ngModel})="marks">
+        <input type="number" name="" id="marks" [(ngModel)]="marks">
         <br>
         <label for="">Fee</label>
-        <input type="number" name="" id="fee" ({ngModel})="fee">
+        <input type="number" name="" id="fee" [(ngModel)]="fee">
         <br>
         <button (click)="register()" >Register</button>
         
-        
-
         <h2>All Students</h2>
        
         <button (click)="pendingfee()" >Pendingfee</button>
@@ -36,7 +34,7 @@
             <tr *ngFor="let student of students; let i = index">
                 <td> {{student.name}} </td>
                 <td> {{student.marks}} </td>
-                <td> {{student.fee}} </td>
+                <td> {{student.fee  | balance}} </td>
                 <td><button (click)="delete(i)">Delete</button></td>
             </tr>
         </tbody>

@@ -1,0 +1,49 @@
+<div class="parent">
+    <div class="child">
+   
+   
+    <div class="left">
+        <h3>Filters</h3>
+        <br>
+        <br>
+        <H4>Category</H4>
+        <br>
+        <input type="checkbox" name="mens" id="">
+        <label for="mens">men's clothing</label>
+        <br>
+        <input type="checkbox" name="jew" id="">
+        <label for="jew">jewellery</label>
+        <br>
+        <input type="checkbox" name="ele" id="">
+        <label for="ele">electronics</label>
+        <br>
+        <input type="checkbox" name="wom" id="">
+        <label for="wom">women;s clothing</label>
+        <br>
+        <br> 
+        <h4>Price</h4>
+        <br>
+        <input type="checkbox" name="7" id="">
+        <label for="7">Rs 7 to Rs 50</label>
+        <br>
+        <input type="checkbox" name="50" id="">
+        <label for="50">Rs 50 to Rs 300</label>
+        <br>
+        <input type="checkbox" name="300" id="">
+        <label for="300">Rs300 to Rs 600</label>
+        <br>
+        <input type="checkbox" name="600" id="">
+        <label for="600">Rs 600 to Rs 1000</label>
+        <br>
+    </div>
+    <div  class="right" >
+        <div *ngFor="let item of items"class="photos">
+            <img src="{{item.image}}" alt=""width="200px" height="150px">
+
+        <h6>"{{item.title}}"" </h6>
+        <small>"{{item.category}}"</small>
+        <p>Rs<b>"{{item.price}}"</b>  <del>Rs.3999</del><strong style="color: red;">(81%OFF)</strong></p>
+      
+
+        </div> </div></div>
+</div>
