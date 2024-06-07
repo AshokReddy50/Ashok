@@ -23,10 +23,11 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateAccountService } from './create-account.service';
 import { CreateAccountComponent } from './create-account/create-account.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard', canActivate:[AuthenticationGuard],component:DashboardComponent,children:[
     {path:'welcome',component:WelcomeComponent},
     {path:'home',component:HomeComponent},
     {path:'data-binding',component:DataBindingComponent},

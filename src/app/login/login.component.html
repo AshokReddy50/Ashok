@@ -1,19 +1,19 @@
 <div class="parent">
     <div class="child">
-    <form action="">
+    <form [formGroup]="loginForm">
         <h2>Login</h2>
         <label for="">Email:</label>
         <br>
-        <input type="text" name="" id="">
+        <input type="text" formControlName="email">
         <br>
         <br>
         <label for="">Password:</label>
         <br>
-        <input type="password" name="" id="">
+        <input type="password" formControlName="password">
         <br>
         <br>
         <hr>
-        <button routerLink="/dashboard">Login</button>
+        <button (click)="login()">Login</button>
 
     </form>
 </div>
