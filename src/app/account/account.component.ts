@@ -62,14 +62,14 @@ delete(id:string) {
   this._accountServices.deleteaccounts(id).subscribe(
     (data:any)=>{
       alert("deleted successfully")
+      location.reload();
     },
     (err:any)=>{
       alert("internal server error")
     }
   )
 }
-
-  ngOnInit(): void {
+ngOnInit(): void {
   }
-
+  
 }

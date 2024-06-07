@@ -20,6 +20,9 @@ import { DiceComponent } from './dice/dice.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { AccountComponent } from './account/account.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountService } from './create-account.service';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -40,7 +43,9 @@ const routes: Routes = [
     {path:'dice',component:DiceComponent},
     {path:'vehicles',component:VehiclesComponent},
     {path:'account',component:AccountComponent},
-    {path:'flipkart',component:FlipkartComponent}
+    {path:'flipkart',component:FlipkartComponent},
+    {path:'create-vehicle',component:CreateVehicleComponent},
+    {path:'create-account',component:CreateAccountComponent}
 
      
   ]},

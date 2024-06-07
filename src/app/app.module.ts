@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CircleComponent } from './circle/circle.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
@@ -26,6 +26,8 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountComponent } from './account/account.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -50,13 +52,16 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
     DiceComponent,
     VehiclesComponent,
     AccountComponent,
-    FlipkartComponent
+    FlipkartComponent,
+    CreateVehicleComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
