@@ -1,0 +1,5 @@
+<button routerLink="/login">go to login page</button>
+<h1 *ngFor="let ashok of mails">{{ashok.title}}
+    <button (click)="delete(ashok.id)">delete</button>
+</h1>
+

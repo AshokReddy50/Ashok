@@ -24,6 +24,9 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { CreateAccountService } from './create-account.service';
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { AuthenticationGuard } from './authentication.guard';
+import { AshokComponent } from './ashok/ashok.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateEmployesComponent } from './create-employes/create-employes.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -46,12 +49,16 @@ const routes: Routes = [
     {path:'account',component:AccountComponent},
     {path:'flipkart',component:FlipkartComponent},
     {path:'create-vehicle',component:CreateVehicleComponent},
-    {path:'create-account',component:CreateAccountComponent}
+    {path:'create-account',component:CreateAccountComponent},
+    {path:'ashok', component:AshokComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'create-employes',component:CreateEmployesComponent}
+
 
      
   ]},
   {path:'',component:LoginComponent},
-  {path:'**',component:PagenotfoundComponent}
+  {path:'**',component:PagenotfoundComponent},
 ];
 
 @NgModule({

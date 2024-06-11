@@ -8,7 +8,9 @@ import { Observable } from 'rxjs';
 export class AuthenticationGuard implements CanActivate {
   canActivate(
     route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree
+    {
+    
     if(sessionStorage.getItem('my-app-token')){
       return true;
     }
@@ -17,4 +19,4 @@ export class AuthenticationGuard implements CanActivate {
       }
     }
   }
-  
+
