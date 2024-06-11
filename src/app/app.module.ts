@@ -31,6 +31,8 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { AshokComponent } from './ashok/ashok.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateEmployesComponent } from './create-employes/create-employes.component';
+import { VehilceDetailsComponent } from './vehilce-details/vehilce-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { CreateEmployesComponent } from './create-employes/create-employes.compo
     CreateAccountComponent,
     AshokComponent,
     CreateUserComponent,
-    CreateEmployesComponent
+    CreateEmployesComponent,
+    VehilceDetailsComponent,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,

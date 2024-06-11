@@ -1,0 +1,29 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.child {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: antiquewhite;
+    box-shadow: 0,0,black;
+   
+}
+.right{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(117, 99, 75);
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}

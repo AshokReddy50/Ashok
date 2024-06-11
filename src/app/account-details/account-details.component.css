@@ -1,0 +1,26 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.child {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+ .left{
+    height: 50%;
+    width: 20%;
+    background-color: antiquewhite;
+    box-shadow: 0,0,black;
+   
+}
+.right{
+    height: 50%;
+    width: 80%;
+    background-color: rgb(117, 99, 75);
+}                                    

@@ -27,6 +27,8 @@ import { AuthenticationGuard } from './authentication.guard';
 import { AshokComponent } from './ashok/ashok.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CreateEmployesComponent } from './create-employes/create-employes.component';
+import { VehilceDetailsComponent } from './vehilce-details/vehilce-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -52,7 +54,9 @@ const routes: Routes = [
     {path:'create-account',component:CreateAccountComponent},
     {path:'ashok', component:AshokComponent},
     {path:'create-user',component:CreateUserComponent},
-    {path:'create-employes',component:CreateEmployesComponent}
+    {path:'create-employes',component:CreateEmployesComponent},
+    {path:'vehicle-details/:id',component:VehilceDetailsComponent},
+    {path:'account-details/:id',component:AccountDetailsComponent}
 
 
      

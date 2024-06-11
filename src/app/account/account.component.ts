@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AccountService } from '../account.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-account',
@@ -15,7 +16,7 @@ export class AccountComponent implements OnInit {
   public order:string="";
  
 
-  constructor(private _accountServices:AccountService) {
+  constructor(private _accountServices:AccountService, private router:Router) {
     _accountServices.getaccounts().subscribe(
       (data:any)=>{
         this.accounts = data;
@@ -70,6 +71,12 @@ delete(id:string) {
   )
 }
 ngOnInit(): void {
+  }
+  view(id:string){
+    this.router.navigateByUrl('/dashboard/account-details/'+id)
+  }
+  edit(id:string){
+
   }
   
 }
