@@ -64,7 +64,7 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
     CreateUserComponent,
     CreateEmployesComponent,
     VehilceDetailsComponent,
-    AccountDetailsComponent
+    AccountDetailsComponent,
   ],
   imports: [
     BrowserModule,

@@ -78,6 +78,7 @@ view(id:string){
 
 }
 edit(id:string){
+  this.router.navigateByUrl('/dashboard/edit-vehicle/'+id);
 }
 
   ngOnInit(): void {
